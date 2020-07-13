@@ -1,0 +1,250 @@
+
+	ol{
+		list-style:none;
+		padding:0px;
+	}
+
+	textarea{
+		position:relative;
+		left:50%;
+		transform:translate(-50%,0);
+		width:75%;
+		height:75%;
+		border:1px solid black;
+		resize:none;
+		font-size:20px;
+	}
+
+	.activeElem{
+		background-color:#0e74ea;
+		color:white;
+	}
+
+	.btn{
+		padding: 18px 24px;
+		width:250px;
+		border: 0 none;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+
+	.btn:focus, .btn:active:focus, .btn.active:focus {
+		outline: 0 none;
+	}
+
+	.btnGraph {
+		background-color: #2196F3;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		outline: none;
+	}
+
+	.btnGraph:hover, .dropdown:hover .btn {
+		background-color: #0b7dda;
+	}
+
+	.btn-graph:hover .dropdown-content {
+		display: block;
+	}
+
+	.btn-primary {
+		background: #33a6cc;
+		color: #ffffff;
+	}
+
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+		background: #007299;
+	}
+
+	.btn-primary:active, .btn-primary.active {
+		background: #007299;
+		box-shadow: none;
+	}
+
+	.btn-toggle{
+		float:left;
+		position:absolute;
+		top:calc(50% - 15px);
+		left:10px;
+		color:#fff;
+		background-color: #4d4d4d;
+		border:0px;
+	}
+
+	.container-fluid{
+		padding-left:60px;
+	}
+
+	.ct-chart{
+		height: 100%;
+		width:100%;
+	}
+
+	.dropdown {
+		position: absolute;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 115px;
+		z-index: 1;
+		opacity:0.9;
+
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 8px 25px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd
+	}
+
+	.li-Patients{
+		padding:5px;
+	}
+
+	.li-Patients:hover{
+		color:white;
+		background-color:#666666
+	}
+
+	.margin{
+		margin:15px;
+	}
+
+	.navbar{
+		margin-bottom:0px;
+		background-color:#4d4d4d;
+	}
+
+	.navbar-default .navbar-nav>li>a {
+		color: white;
+	}
+
+	.navbar-default{
+		border:none;
+		border-radius:0px;
+	}
+
+	.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+		color: white;
+		background-color: transparent;
+		background-color: #1a1a1a;
+	}
+
+	.patients{
+		width:100%;
+		height:100%;
+		background-color:#f8f8f8;
+		display:inline-block;
+		float:left;
+	}
+
+	.row {
+		display: block;
+		flex-wrap: wrap;
+		width:100%;
+		margin:0px;
+		height:calc(100% - 50px);
+	}
+
+	.width{
+		width:100%;
+	}
+
+	.history{
+		height:587px;
+	}
+
+	.btn-sw{
+		float:right;
+		height:50px;
+		width:60px;
+		position:relative;
+		left:15px;
+		border:none;
+		color:white;
+	}
+
+	.btn-tel{
+		float:right;
+		height:50px;
+		width:60px;
+		position:relative;
+		left:15px;
+		border:none;
+		color:white;
+		background-color:transparent;
+	}
+
+	.btn-sw-off{
+		background-color:#cc0000;
+	}
+
+	.btn-sw-on{
+		background-color:#00e600;
+	}
+
+	.tel{
+		float:right;
+		position:relative;
+		width:200px;
+		height:40px;
+		top:5px;
+		right:5px;
+	}
+
+	@media screen and (max-width: 600px) {
+		.row{
+			flex-direction: column;
+		}
+		.col-xs-3{
+			width:100%;
+			height:60%;
+		}
+		.col-xs-9{
+			width:100%;
+			padding-bottom:15px;
+		}
+		.reposition{
+			position:relative;
+
+		}
+		textarea{
+			width:90%;
+		}
+	}
+	@media screen and (max-width: 767px){
+		.btn-toggle{
+			top:10px;
+		}
+		.container-fluid{
+			padding-left:10px;
+		}
+		.navbar-header{
+		   padding-left:50px;
+
+		}
+		.tel{
+			float:left;
+		}
+	}
+
+	@media screen and (max-width: 840px) and (min-width: 768px){
+		.tel{
+			position: absolute;
+			top: 5px;
+			right: 120px;
+			width:150px;
+		}
+	}

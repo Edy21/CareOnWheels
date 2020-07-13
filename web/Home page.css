@@ -1,0 +1,293 @@
+
+ol{
+  list-style:none;
+  padding:0px;
+}
+
+.activeElem{
+  background-color:#0e74ea;
+  color:white;
+}
+
+.arrow {
+  font-size:45px;
+  color:white;
+  background-color:#0e74ea;
+  position:relative;
+}
+
+.arrow:active {
+  transform: translateY(4px);
+}
+
+.btn{
+  padding: 18px 24px;
+  width:250px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #33a6cc;
+  color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+  background: #007299;
+}
+
+.btn-primary:active, .btn-primary.active {
+  background: #007299;
+  box-shadow: none;
+}
+
+.btn-toggle{
+  float:left;
+  position:absolute;
+  top:calc(50% - 15px);
+  left:10px;
+  color:#fff;
+  background-color: #4d4d4d;
+  border:0px;
+}
+
+.container-fluid{
+  padding-left:60px;
+}
+
+.data-container {
+  background: white;
+  width: 90px;
+  height: 20px;
+  border: 1px solid #111111;
+  border-radius: 3px;
+  margin-top:10px;
+  text-align:center;
+  font-size:17px;
+}
+
+.li-Patients{
+  padding:5px;
+}
+
+.li-Patients:hover{
+  color:white;
+  background-color:#666666
+}
+
+.margin{
+  margin:15px;
+}
+
+.navbar{
+  margin-bottom:0px;
+  background-color:#4d4d4d;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default{
+  border:none;
+  border-radius:0px;
+}
+.fa-list-alt{
+  font-size: 35px;
+  position:relative;
+  top:0px;
+  left:calc(-50% + 22px);
+  cursor:pointer;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+  color: white;
+  background-color: transparent;
+  background-color: #1a1a1a;
+}
+
+.next{
+  width:50%;
+  display:inline-block;
+}
+
+.patients{
+  width:100%;
+  height:100%;
+  background-color:#f8f8f8;
+  display:inline-block;
+  float:left;
+}
+
+.row {
+  display: block;
+  flex-wrap: wrap;
+  width:100%;
+  margin:0px;
+  height:calc(100% - 50px);
+}
+
+.width{
+  width:100%;
+  position:absolute;
+  top:calc(50% - 180px);
+}
+
+.btn-sw{
+  float:right;
+  height:50px;
+  width:60px;
+  position:relative;
+  left:15px;
+  border:none;
+  color:white;
+}
+
+.btn-tel{
+  float:right;
+  height:50px;
+  width:60px;
+  position:relative;
+  left:15px;
+  border:none;
+  color:white;
+  background-color:transparent;
+}
+
+.btn-sw-off{
+  background-color:#cc0000;
+}
+
+.btn-sw-on{
+  background-color:#00e600;
+}
+.blur {
+filter:blur(20px);
+
+}
+.overlay{
+position: absolute;
+width:100%;
+height:100%;
+z-index: 2;
+
+
+}
+.exit{
+float:left;
+border:0px;
+background-color: #F8F8F8;
+ outline: none;
+ position: absolute;
+}
+
+.tel{
+  float:right;
+  position:relative;
+  width:200px;
+  height:40px;
+  top:5px;
+  right:5px;
+}
+
+.exclamation-style{
+  color:red;
+  position:absolute;
+  bottom: 84px;
+  left: 170px;
+}
+.inp{
+  width:45%;
+
+}
+
+.exclamation-hide{
+  display:none;
+}
+.select_patient{
+  position:relative;
+  background-color: #F8F8F8;
+  border:1px solid grey;
+  top:50%;
+  left:50%;
+  width:35%;
+  height:30%;
+  transform: translate(-50% , -50%);
+
+}
+.align{
+text-align: center;
+position: relative;
+top: 50%;
+transform: translate(0,-50%);
+}
+.ok{
+width: 60px;
+position: relative;
+top: 8px ;
+background-color:#0e74ea;
+}
+.tb{
+width: 75%;
+}
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+th, td {
+padding: 15px;
+}
+.fa-long-arrow-left{
+position: absolute;
+left: 8px;
+font-size: 26px;
+cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+  .row{
+    flex-direction: column;
+  }
+  .col-xs-3{
+    width:100%;
+    height:60%;
+  }
+  .col-xs-9{
+    width:100%;
+    padding-bottom:10px;
+  }
+  .width{
+    position:relative;
+    top:0px;
+  }
+}
+@media screen and (max-width: 768px){
+  .btn-toggle{
+    top:10px;
+  }
+  .container-fluid{
+    padding-left:10px;
+  }
+  .navbar-header{
+     padding-left:50px;
+  }
+  .tel{
+    float:left;
+  }
+
+}
+@media screen and (max-width: 840px) and (min-width: 768px){
+  .tel{
+    position: absolute;
+    top: 5px;
+    right: 120px;
+    width:150px;
+  }
+}
